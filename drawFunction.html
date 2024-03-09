@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let symbol = "*";
+      symbol = prompt("Input symbol:");
+      function drawStar(n, space, symbol) {
+        for (let i = 0; i < space; i++) {
+          document.write("&nbsp;");
+        }
+        for (let i = 0; i < n; i++) {
+          document.write(symbol);
+        }
+        document.write("<br/>");
+      }
+      function drawFigure() {
+        drawStar(20, 20, symbol);
+        drawStar(20, 16, symbol);
+        drawStar(20, 12, symbol);
+        drawStar(20, 8, symbol);
+        drawStar(20, 4, symbol);
+        drawStar(20, 0, symbol);
+        drawStar(20, 0, symbol);
+        drawStar(20, 4, symbol);
+        drawStar(20, 8, symbol);
+        drawStar(20, 12, symbol);
+        drawStar(20, 16, symbol);
+        drawStar(20, 20, symbol);
+        document.write("<br/>");
+        drawStar(20, 8, symbol);
+        drawStar(20, 12, symbol);
+        drawStar(20, 16, symbol);
+        drawStar(20, 20, symbol);
+        drawStar(20, 24, symbol);
+        drawStar(20, 28, symbol);
+        drawStar(20, 28, symbol);
+        drawStar(20, 24, symbol);
+        drawStar(20, 20, symbol);
+        drawStar(20, 16, symbol);
+        drawStar(20, 12, symbol);
+        drawStar(20, 8, symbol);
+      }
+      drawFigure();
+    </script>
+  </body>
+</html>
